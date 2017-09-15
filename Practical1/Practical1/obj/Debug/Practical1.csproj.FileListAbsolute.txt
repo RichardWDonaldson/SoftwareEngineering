@@ -1,0 +1,29 @@
+C:\Users\40329070\source\repos\Practical1\Practical1\bin\Debug\Practical1.exe.config
+C:\Users\40329070\source\repos\Practical1\Practical1\bin\Debug\Practical1.exe
+C:\Users\40329070\source\repos\Practical1\Practical1\bin\Debug\Practical1.pdb
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.csprojResolveAssemblyReference.cache
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\MainWindow.g.cs
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\App.g.cs
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1_MarkupCompile.cache
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1_MarkupCompile.lref
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\MainWindow.baml
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.g.resources
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.Properties.Resources.resources
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.csproj.GenerateResource.Cache
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.csproj.CoreCompileInputs.cache
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.exe
+C:\Users\40329070\source\repos\Practical1\Practical1\obj\Debug\Practical1.pdb
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\bin\Debug\Practical1.exe.config
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\bin\Debug\Practical1.exe
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\bin\Debug\Practical1.pdb
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.csprojResolveAssemblyReference.cache
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\MainWindow.g.cs
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\App.g.cs
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1_MarkupCompile.cache
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1_MarkupCompile.lref
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\MainWindow.baml
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.g.resources
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.Properties.Resources.resources
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.csproj.GenerateResource.Cache
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.exe
+C:\Users\Richard\Desktop\Git Uni\SoftwareEngineering\Practical1\Practical1\obj\Debug\Practical1.pdb
