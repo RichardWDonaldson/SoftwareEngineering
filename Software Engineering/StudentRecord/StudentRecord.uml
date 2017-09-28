@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_GpVwsKRbEeecOtj6bvfAwA" name="StudentRecord">
+    <eAnnotations xmi:id="_GyRqQKRbEeecOtj6bvfAwA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_GyTfcKRbEeecOtj6bvfAwA" source="codegen">
+        <details xmi:id="_GyTfcaRbEeecOtj6bvfAwA" key="codegenDirectory" value="/StudentRecord/src"/>
+        <details xmi:id="_GyfssKRbEeecOtj6bvfAwA" key="observedFolders" value="/StudentRecord/src"/>
+        <details xmi:id="_oC8ZsKRbEeecOtj6bvfAwA" key="AssociatedSourceCode" value="/StudentRecord/src/Student.java;4157609168/1;/StudentRecord/src/Undergraduate.java;4078796092/1;/StudentRecord/src/Test.java;3335918265/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_vLg-4KRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_vLhl8KRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_vLiNAKRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_vLiNAaRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_vLi0EKRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_vLjbIKRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_vLjbIaRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_vLkCMKRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_vONtkKRbEeecOtj6bvfAwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jlYpQKRbEeecOtj6bvfAwA" name="Student">
+      <ownedAttribute xmi:id="_twxfMKRbEeecOtj6bvfAwA" name="matric" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_w0KXsKRbEeecOtj6bvfAwA" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1Z5MsKRbEeecOtj6bvfAwA" name="programme" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kc11sKRbEeecOtj6bvfAwA" name="Undergraduate">
+      <generalization xmi:id="_EhCK8KRcEeecOtj6bvfAwA" general="_jlYpQKRbEeecOtj6bvfAwA"/>
+      <ownedAttribute xmi:id="_47j8oKRbEeecOtj6bvfAwA" name="year" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6TEiIKRbEeecOtj6bvfAwA" name="courseDuration" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__c5QwKRdEeecOtj6bvfAwA" name="toString" specification="_G16-sKRcEeecOtj6bvfAwA">
+        <ownedParameter xmi:id="__c5QwaRdEeecOtj6bvfAwA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return &quot;\nMatric: &quot; + this.getMatric() +&#xD;
+		   &quot;\nName: &quot; + this.getName() + &#xD;
+		   &quot;\nProgramme: &quot; + this.getProgramme() + &#xD;
+		   &quot;\nYear: &quot; + this.getYear() +&#xD;
+		   &quot;\nCourse Duration: &quot; + this.getCourseDuration();&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_G16-sKRcEeecOtj6bvfAwA" name="toString" visibility="public" method="__c5QwKRdEeecOtj6bvfAwA">
+        <ownedParameter xmi:id="_G16-saRcEeecOtj6bvfAwA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PTtN4KRdEeecOtj6bvfAwA" name="Test">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qgK_MKRdEeecOtj6bvfAwA" name="main" specification="_qgBOMKRdEeecOtj6bvfAwA">
+        <ownedParameter xmi:id="_qgK_MaRdEeecOtj6bvfAwA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qgK_MqRdEeecOtj6bvfAwA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Undergraduate undergradStudent = new Undergraduate();&#xD;
+		&#xD;
+		undergradStudent.setMatric(40012345);&#xD;
+		undergradStudent.setName(&quot;Sarah Clinton&quot;);&#xD;
+		undergradStudent.setProgramme(&quot;BEng Software Engineering&quot;);&#xD;
+		&#xD;
+		undergradStudent.setYear(&quot;3rd&quot;);&#xD;
+		undergradStudent.setCourseDuration(4);&#xD;
+		&#xD;
+		System.out.println(undergradStudent.toString());&#xD;
+		&#xD;
+				&#xD;
+				&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_qgBOMKRdEeecOtj6bvfAwA" name="main" isStatic="true" method="_qgK_MKRdEeecOtj6bvfAwA">
+        <ownedParameter xmi:id="_qgBOMaRdEeecOtj6bvfAwA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qgBOMqRdEeecOtj6bvfAwA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_GyV7sKRbEeecOtj6bvfAwA">
+      <eAnnotations xmi:id="_GyYX8KRbEeecOtj6bvfAwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_GycCUKRbEeecOtj6bvfAwA" base_Package="_GpVwsKRbEeecOtj6bvfAwA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+</xmi:XMI>
