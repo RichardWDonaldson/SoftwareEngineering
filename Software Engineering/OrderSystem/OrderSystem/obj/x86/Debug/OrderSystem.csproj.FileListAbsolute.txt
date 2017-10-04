@@ -34,3 +34,21 @@ H:\set09117\C#\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.exe
 H:\set09117\C#\OrderSystem\OrderSystem\bin\Debug\OrderSystem.exe
 H:\set09117\C#\OrderSystem\OrderSystem\bin\Debug\OrderSystem.pdb
 H:\set09117\C#\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.pdb
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\bin\Debug\OrderSystem.exe
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\bin\Debug\OrderSystem.pdb
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.csprojResolveAssemblyReference.cache
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\MainWindow.baml
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\AddOrderView.baml
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\DefaultView.baml
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\ViewOrderView.baml
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\MainWindow.g.cs
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\AddOrderView.g.cs
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\DefaultView.g.cs
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\Views\ViewOrderView.g.cs
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\App.g.cs
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem_MarkupCompile.cache
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.g.resources
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.Properties.Resources.resources
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.csproj.GenerateResource.Cache
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.exe
+C:\Users\richa\Documents\SoftwareEngineering\Software Engineering\OrderSystem\OrderSystem\obj\x86\Debug\OrderSystem.pdb

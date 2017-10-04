@@ -6,6 +6,35 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Row 1-->
+        <TextBlock Text="{Binding ItemNameTextBlock}" Grid.Row="0" Grid.Column="0"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Text="{Binding ItemNameTextBox}" Grid.Row="0" Grid.Column="1"
+                     VerticalAlignment="Center"/>
             
+        <!-- Row 2 -->
+        <TextBlock TextAlignment="{Binding ItemPriceTextBlock}" Grid.Row="1" Grid.Column="0"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Text="{Binding ItemPriceTextBox}" Grid.Row="1" Grid.Column="1"
+                     VerticalAlignment="Center"/>
+            
+            <!-- Row 3-->
+        <CheckBox Content="{Binding ItemPaidTextBlock}" IsChecked="{Binding IsPaid}"
+                      VerticalAlignment="Center" HorizontalAlignment="Center"
+                  Grid.Row="2" Grid.Column="1"/>
+
+
+
     </Grid>
 </UserControl>

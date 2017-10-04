@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using OrderSystem.Commands;
+using System.Windows;
+using OrderSystem.Models;
+using OrderSystem.Database;
 
 namespace OrderSystem.ViewModels
 {
@@ -55,6 +58,35 @@ namespace OrderSystem.ViewModels
         #region Private Click Helpers
         private void AddButtonClick()
         {
+            if(string.IsNullOrWhiteSpace(ItemNameTextBox) || string.IsNullOrWhiteSpace(ItemPriceTextBox))
+            {
+                MessageBox.Show("Please enter all values");
+                return;
+            }
+
+            Order order = new Order()
+            {
+                Name = ItemNameTextBox,
+                Price = Convert.ToDecimal(ItemPriceTextBox),
+                IsPaid = IsPaid
+            };
+
+            SaveToFile save = new SaveToFile();
+
+            if(!save.ToCsv(order))
+            {
+                MessageBox.Show("Error while saving\n" + save.ErrorCode);
+            }
+            else
+            {
+                MessageBox.Show("Order Saved");
+                save = null;
+            }
+
+
+
+
+
         }
 
         #endregion 
