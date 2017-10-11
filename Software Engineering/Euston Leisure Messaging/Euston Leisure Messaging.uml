@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_MGd-MK4TEeetea0VCcPJ9g" name="Euston_Leisure_Messaging">
+    <eAnnotations xmi:id="_MUDHMK4TEeetea0VCcPJ9g" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_MUEVUK4TEeetea0VCcPJ9g" source="codegen">
+        <details xmi:id="_MUEVUa4TEeetea0VCcPJ9g" key="codegenDirectory" value="/Euston Leisure Messaging/src"/>
+        <details xmi:id="_MURwsK4TEeetea0VCcPJ9g" key="observedFolders" value="/Euston Leisure Messaging/src"/>
+        <details xmi:id="_o_vIMK4WEeetea0VCcPJ9g" key="AssociatedSourceCode" value="/Euston Leisure Messaging/src/Model/Email.java;528882273/1;/Euston Leisure Messaging/src/Model/Tweet.java;1717836838/1;/Euston Leisure Messaging/src/Model/SIR.java;3005447174/1;/Euston Leisure Messaging/src/Model/User.java;3781861277/1;/Euston Leisure Messaging/src/Model/Message.java;4081051093/1;/Euston Leisure Messaging/src/Model/SMS.java;3631713200/1;/Euston Leisure Messaging/src/view/Menu.java;1324664868/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_fotZUK4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_fotZUa4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAYK4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAYa4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAYq4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAY64UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAZK4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_fouAZa4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_frLegK4UEeetea0VCcPJ9g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_I-vi0K4UEeetea0VCcPJ9g" name="Model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SYA0wK4TEeetea0VCcPJ9g" name="Email">
+        <generalization xmi:id="_NZchoK4WEeetea0VCcPJ9g" general="_PDyD4K4TEeetea0VCcPJ9g"/>
+        <ownedAttribute xmi:id="_HPevMK4VEeetea0VCcPJ9g" name="subject" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N7RRwK4VEeetea0VCcPJ9g" name="message" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xC3toK4VEeetea0VCcPJ9g" name="Tweet">
+        <generalization xmi:id="_M-6hwK4WEeetea0VCcPJ9g" general="_PDyD4K4TEeetea0VCcPJ9g"/>
+        <ownedAttribute xmi:id="_yUWjoK4VEeetea0VCcPJ9g" name="message" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_PgZnEK4WEeetea0VCcPJ9g" client="_6KTosK4UEeetea0VCcPJ9g" supplier="_PDyD4K4TEeetea0VCcPJ9g"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T9aFQK4TEeetea0VCcPJ9g" name="SIR">
+        <generalization xmi:id="_OGjfQK4WEeetea0VCcPJ9g" general="_SYA0wK4TEeetea0VCcPJ9g"/>
+        <ownedAttribute xmi:id="_geKlMK4VEeetea0VCcPJ9g" name="sportCentreCode" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_lfNdMK4VEeetea0VCcPJ9g" name="incidentType" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6KTosK4UEeetea0VCcPJ9g" name="User">
+        <ownedAttribute xmi:id="_4AzwIK4VEeetea0VCcPJ9g" name="userID" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_4Z_FIK4VEeetea0VCcPJ9g" name="firstName" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_43ECsK4VEeetea0VCcPJ9g" name="surname" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_5Ey8sK4VEeetea0VCcPJ9g" name="jobTitle" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_5Ox_IK4VEeetea0VCcPJ9g" name="department" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_v52aoK4WEeetea0VCcPJ9g" name="toString" visibility="public">
+          <ownedParameter xmi:id="_v52aoa4WEeetea0VCcPJ9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PDyD4K4TEeetea0VCcPJ9g" name="Message">
+        <ownedAttribute xmi:id="_NgkvQK4UEeetea0VCcPJ9g" name="time" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_h8jEMK4UEeetea0VCcPJ9g" name="date" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SLslIK4VEeetea0VCcPJ9g" name="sender" visibility="public" type="_6KTosK4UEeetea0VCcPJ9g" association="_JU7t4K4XEeetea0VCcPJ9g"/>
+        <ownedAttribute xmi:id="_UjOdMK4VEeetea0VCcPJ9g" name="receiver" visibility="public" type="_6KTosK4UEeetea0VCcPJ9g" association="_JU8U8K4XEeetea0VCcPJ9g"/>
+        <ownedOperation xmi:id="_s-BisK4WEeetea0VCcPJ9g" name="toString" visibility="public">
+          <ownedParameter xmi:id="_s-Bisa4WEeetea0VCcPJ9g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rv0MUK4TEeetea0VCcPJ9g" name="SMS">
+        <generalization xmi:id="_NvfDEK4WEeetea0VCcPJ9g" general="_PDyD4K4TEeetea0VCcPJ9g"/>
+        <ownedAttribute xmi:id="_0RpMMK4UEeetea0VCcPJ9g" name="message" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JU7t4K4XEeetea0VCcPJ9g" name="" memberEnd="_SLslIK4VEeetea0VCcPJ9g _JU7t4a4XEeetea0VCcPJ9g">
+        <ownedEnd xmi:id="_JU7t4a4XEeetea0VCcPJ9g" name="" type="_PDyD4K4TEeetea0VCcPJ9g" association="_JU7t4K4XEeetea0VCcPJ9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JU8U8K4XEeetea0VCcPJ9g" name="" memberEnd="_UjOdMK4VEeetea0VCcPJ9g _JU8U8a4XEeetea0VCcPJ9g">
+        <ownedEnd xmi:id="_JU8U8a4XEeetea0VCcPJ9g" name="" type="_PDyD4K4TEeetea0VCcPJ9g" association="_JU8U8K4XEeetea0VCcPJ9g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2CRKYK4WEeetea0VCcPJ9g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2CRKYa4WEeetea0VCcPJ9g" name="awt">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2CkFUK4WEeetea0VCcPJ9g" name="EventQueue"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2CRKYq4WEeetea0VCcPJ9g" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2CRKY64WEeetea0VCcPJ9g" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2Cl6gK4WEeetea0VCcPJ9g" name="JFrame"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2CUNsK4WEeetea0VCcPJ9g" name="view">
+      <packagedElement xmi:type="uml:Class" xmi:id="_2CX4EK4WEeetea0VCcPJ9g" name="Menu">
+        <ownedAttribute xmi:id="_2CoWwK4WEeetea0VCcPJ9g" name="frame" visibility="private" type="_2Cl6gK4WEeetea0VCcPJ9g" association="_2CzV4K4WEeetea0VCcPJ9g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2CvEcK4WEeetea0VCcPJ9g" name="main" specification="_2Ca7YK4WEeetea0VCcPJ9g">
+          <ownedParameter xmi:id="_2CvEca4WEeetea0VCcPJ9g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2CvEcq4WEeetea0VCcPJ9g" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					Menu window = new Menu();&#xD;
+					window.frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2CxgsK4WEeetea0VCcPJ9g" name="Menu" specification="_2CbicK4WEeetea0VCcPJ9g">
+          <ownedParameter xmi:id="_2CyHwK4WEeetea0VCcPJ9g" type="_2CX4EK4WEeetea0VCcPJ9g" direction="return"/>
+          <language>java</language>
+          <body>initialize();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2CyHwa4WEeetea0VCcPJ9g" name="initialize" specification="_2CcJgq4WEeetea0VCcPJ9g">
+          <language>java</language>
+          <body>frame = new JFrame();&#xD;
+		frame.setBounds(100, 100, 450, 300);&#xD;
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_2Ca7YK4WEeetea0VCcPJ9g" name="main" isStatic="true" method="_2CvEcK4WEeetea0VCcPJ9g">
+          <ownedComment xmi:id="_2CyHwq4WEeetea0VCcPJ9g">
+            <body>Launch the application.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_2Ca7Ya4WEeetea0VCcPJ9g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Ca7Yq4WEeetea0VCcPJ9g" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_2CbicK4WEeetea0VCcPJ9g" name="Menu" method="_2CxgsK4WEeetea0VCcPJ9g">
+          <eAnnotations xmi:id="_2Cbica4WEeetea0VCcPJ9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_2CcJgK4WEeetea0VCcPJ9g" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_2CyHw64WEeetea0VCcPJ9g">
+            <body>Create the application.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_2CcJga4WEeetea0VCcPJ9g" type="_2CX4EK4WEeetea0VCcPJ9g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_2CcJgq4WEeetea0VCcPJ9g" name="initialize" visibility="private" method="_2CyHwa4WEeetea0VCcPJ9g">
+          <ownedComment xmi:id="_2CyHxK4WEeetea0VCcPJ9g">
+            <body>Initialize the contents of the frame.</body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2CzV4K4WEeetea0VCcPJ9g" name="" memberEnd="_2CzV4a4WEeetea0VCcPJ9g _2CoWwK4WEeetea0VCcPJ9g">
+        <ownedEnd xmi:id="_2CzV4a4WEeetea0VCcPJ9g" name="" type="_2CX4EK4WEeetea0VCcPJ9g" association="_2CzV4K4WEeetea0VCcPJ9g"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_MUGKgK4TEeetea0VCcPJ9g">
+      <eAnnotations xmi:id="_MULDAK4TEeetea0VCcPJ9g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_MUOtYK4TEeetea0VCcPJ9g" base_Package="_MGd-MK4TEeetea0VCcPJ9g">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_2CksYK4WEeetea0VCcPJ9g" base_Element="_2CkFUK4WEeetea0VCcPJ9g"/>
+  <UMLLabProfile:Reference xmi:id="_2Cl6ga4WEeetea0VCcPJ9g" base_Element="_2Cl6gK4WEeetea0VCcPJ9g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_2Co90K4WEeetea0VCcPJ9g" base_Element="_2CoWwK4WEeetea0VCcPJ9g"/>
+  <UMLLabProfile:Reference xmi:id="_2Cz88K4WEeetea0VCcPJ9g" base_Element="_2CzV4K4WEeetea0VCcPJ9g"/>
+</xmi:XMI>
