@@ -22,6 +22,27 @@ namespace Euston_Leisure_Messaging
         private String header, body;
         private bool confirm;
 
+        #region getters and setters
+        public String Header
+        {
+            get { return header; }
+            set { header = value; }
+        }
+
+        public String Body
+        {
+            get { return body; }
+            set { body = value; }
+        }
+
+        public bool Confirm
+        {
+            get { return confirm; }
+            set { confirm = value; }
+        }
+    #endregion
+
+
 
 
         public NewMessage()
@@ -29,6 +50,8 @@ namespace Euston_Leisure_Messaging
             InitializeComponent();
         }
 
+
+        #region button controls 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
             if ((string.IsNullOrWhiteSpace(txtHeader.Text) || string.IsNullOrWhiteSpace(txtBody.Text)) {
@@ -44,7 +67,19 @@ namespace Euston_Leisure_Messaging
             }
            
             
+        } 
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            confirm = false;
+            this.Close();
         }
+
+#endregion
+
+
+
+
 
 
 

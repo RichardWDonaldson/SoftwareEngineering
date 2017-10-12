@@ -23,7 +23,9 @@ namespace Euston_Leisure_Messaging
     {
         private String inputHeader, inputBody;
         private int i;
-        
+        private bool testMessage, readMessage;
+        private Control controller;
+        private MessageReader messageReader;
 
 
 
@@ -31,6 +33,10 @@ namespace Euston_Leisure_Messaging
         public MainWindow()
         {
             InitializeComponent();
+            Control crtl = new Control();
+            testMessage = false;
+            readMessage = false;
+            i = 0;
         }
 
         private void btnNewMessage_Click(object sender, RoutedEventArgs e)
@@ -38,17 +44,44 @@ namespace Euston_Leisure_Messaging
             NewMessage newMessage = new NewMessage();
             newMessage.ShowDialog();
 
-            if(newMessage.Confirm())
+            if(newMessage.Confirm)
             {
-                inputHeader = NewMessage.Header;
-                inputBody = NewMessage.Body;
+                inputHeader = newMessage.Header;
+                inputBody = newMessage.Body;
+
                 txtblkMessage.Text = inputHeader + "\n" + inputBody;
             }
         }
 
         private void btnAnalyze_Click(object sender, RoutedEventArgs e)
         {
+            if(testMessage)
+            {
+                try
+                {
 
+
+                    controller.analyseMessage(inputHeader, inputBody);
+
+                    txtblkMessage.Text = controller.FinalMessage.messageOut();
+                } catch (System.ArgumentOutOfRangeException e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            } else if (readMessage)
+            {
+                try
+                {
+                    controller.analyseMessage(inputHeader,inputBody);
+                    txtblkMessage.Text = controller.FinalMessage.messageOut();
+                }catch(System.ArgumentOutOfRangeException e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            } else
+            {
+                MessageBox.Show("No message to display, please try again", "Error", MessageBoxButton.OK);
+            }
         }
 
         private void btnShowTrending_Click(object sender, RoutedEventArgs e)
