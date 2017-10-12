@@ -1,0 +1,18 @@
+﻿<Window x:Class="Euston_Leisure_Messaging.NewMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Euston_Leisure_Messaging"
+        mc:Ignorable="d"
+        Title="New Message" Height="300" Width="400" TextOptions.TextFormattingMode="Display" Background="#FF94FFFA">
+    <Grid>
+        <TextBox x:Name="txtHeader" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364"/>
+        <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="133" Margin="10,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" AcceptsReturn="True"/>
+        <Button x:Name="btnConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="217,239,0,0" VerticalAlignment="Top" Width="100" Click="btnConfirm_Click" FontFamily="Segoe UI Semibold" RenderTransformOrigin="-0.028,0.419"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="56,238,0,0" VerticalAlignment="Top" Click="btnCancel_Click" FontFamily="Segoe UI Semibold" Width="100"/>
+        <Label x:Name="lblHeader" Content="Message Header" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black"/>
+        <Label x:Name="lblBody" Content="Message Body" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Width="107"/>
+
+    </Grid>
+</Window>
