@@ -54,7 +54,7 @@ namespace Euston_Leisure_Messaging
         #region button controls 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            if ((string.IsNullOrWhiteSpace(txtHeader.Text) || string.IsNullOrWhiteSpace(txtBody.Text)) {
+            if ((string.IsNullOrWhiteSpace(txtHeader.Text)) || (string.IsNullOrWhiteSpace(txtBody.Text))) {
                 MessageBox.Show("Invalid Input - Please try again", "Error", MessageBoxButton.OK);
 
             } else {

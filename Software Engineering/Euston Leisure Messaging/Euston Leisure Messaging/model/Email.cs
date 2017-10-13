@@ -17,6 +17,7 @@ namespace Euston_Leisure_Messaging.model
 
         #region regex
         private Regex _emailPattern = new Regex(@"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", RegexOptions.IgnoreCase);
+      /*
         private Regex _urlPattern = new Regex(@"(((http|ftp|https):\/{2})+(([0-9a-z_-]+\.)+(aero|asia|biz|cat"+
             "|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro" +
             "|tel|travel|ac|ad|ae|af|ag|ai|al|am|an|ao|aq|ar|as|at|au|aw|ax|az" + 
@@ -32,7 +33,8 @@ namespace Euston_Leisure_Messaging.model
             "|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw|arpa)" +
             "(:[0-9]+)?((\/([~0-9a-zA-Z\#\+\%@\.\/_-]+))?(\?[0-9a-zA-Z\+\%@\/&\[\];=_-]+)" +
             "?)?))\b");
-#endregion
+        */
+        #endregion
 
 
         #region constructors
