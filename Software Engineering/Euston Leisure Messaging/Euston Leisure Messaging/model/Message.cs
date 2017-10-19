@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Euston_Leisure_Messaging.model
@@ -9,9 +11,10 @@ namespace Euston_Leisure_Messaging.model
     public class Message
     {
 
-        private String sender;
+        private string sender;
         private string head;
         private string body;
+        private string messageText;
         private static Dictionary<string, string> TEXTSPEAK;
 
 
@@ -25,13 +28,54 @@ namespace Euston_Leisure_Messaging.model
 
         #endregion
 
+        #region methods
+
+        public static void populateTextSpeak()
+        {
+            TEXTSPEAK = new Dictionary<string, string>();
+
+            StreamReader reader = new StreamReader("textwords.csv");
+            {
+                string line;
+                while (reader.Peek() != -1)
+                {
+                    line = reader.ReadLine();
+                    string[] split = line.Split(',');
+                    TEXTSPEAK.Add(split[0], split[1]);
+                }
+
+
+
+            }
+        }
+
+        public void translateTextSpeak()
+        {
+            string input = messageText;
+
+            foreach(KeyValuePair<String, String> key in TEXTSPEAK)
+            {
+                Regex pat = new Regex(@"\b" + key.Key + "\\b");
+
+                input = pat.Replace(input, key.Key + "<" + key.Value + ">");
+
+            }
+            messageText = input;
+        }
+
+
+
+
+
+
+        #endregion
+
+
         #region getters and setters
         public String Head
         {
             get { return head; }
             set { head = value; }
-
-
         }
 
         public String Body
@@ -46,15 +90,16 @@ namespace Euston_Leisure_Messaging.model
             set { sender = value; }
         }
 
+        public String MessageText
+        {
+            get { return messageText; }
+            set { messageText = value; }
+        }
+
+
         #endregion
 
-        #region methods
-
-        
-
-
-
-        #endregion
+       
 
 
 
