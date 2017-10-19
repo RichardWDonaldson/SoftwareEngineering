@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="control\Control.cs" />
+    <Compile Include="control\MessageReader.cs" />
     <Compile Include="control\Serializer.cs" />
     <Compile Include="model\Email.cs" />
     <Compile Include="model\Message.cs" />

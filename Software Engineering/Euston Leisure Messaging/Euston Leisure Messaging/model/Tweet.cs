@@ -9,11 +9,14 @@ namespace Euston_Leisure_Messaging.model
 {
    public class Tweet : Message
     {
+
+        #region regex
         private Regex userPattern = new Regex(@"@[a-zA-Z0-9]{1,15}");
         private Regex hashTagPattern = new Regex(@"#[a-zA-Z0-9]+");
+#endregion
 
 
-#region constructors
+        #region constructors
         public Tweet(String head, String body)
             :base(head,body)
         {
