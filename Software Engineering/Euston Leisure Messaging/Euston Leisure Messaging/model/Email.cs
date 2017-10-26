@@ -13,7 +13,7 @@ namespace Euston_Leisure_Messaging.model
         private String subject;
         private String censor = "<URL QUarantined>";
         private ArrayList urlList;
-
+        private String head;
 
         #region regex
         private Regex emailPattern = new Regex(@"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", RegexOptions.IgnoreCase);
@@ -92,6 +92,14 @@ namespace Euston_Leisure_Messaging.model
         {
             get { return urlList; }
         }
+
+        public String Head
+        {
+            get { return head; }
+            set { head = value; }
+        }
+
+
 #endregion 
 
 

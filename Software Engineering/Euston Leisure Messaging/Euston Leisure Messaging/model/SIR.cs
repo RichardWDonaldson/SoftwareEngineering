@@ -18,9 +18,12 @@ namespace Euston_Leisure_Messaging.model
 
         private static Regex subjectPattern = new Regex(@"SIR (3[01]|[12][0-9]|0?[1-9])\/(1[0-2]|0?[1-9])\/(?:[0-9]{2})?[0-9]{2}");
         private static Regex centrePattern = new Regex(@"\b\d\d-\d\d-\d\d\b");
+        private static string body;
+        private static string head;
 
         #region constructors
         public SIR(Email email)
+            :base(head, body)
         {
             this.Head = email.Head;
             this.Body = email.Body;

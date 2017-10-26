@@ -64,24 +64,24 @@ namespace Euston_Leisure_Messaging
                     Email newMsg = new Email(header, body);
                     newMsg.analyiseEmail();
                     output = newMsg;
-                    if (SIR.checkIfsir(newMsg))
+                    if (SIR.checkIfSir(newMsg))
                     {
-                        SIR.fillIncidents();
+                        SIR.populateIncidents();
                         SIR sir = new SIR(newMsg);
                         output = sir;
                     }
                     break;
 
                 case 'S':
-                    SMS newMsg = new SMS(header, body);
-                    newMsg.analyiseSMS();
-                    output = newMsg;
+                    SMS newSMSMsg = new SMS(header, body);
+                    newSMSMsg.analyiseSMS();
+                    output = newSMSMsg;
                     break;
 
                 case 'T':
-                    Tweet newMsg = new Tweet(header, body);
-                    newMsg.analyiseTweet();
-                    output = newMsg;
+                    Tweet newTweetMsg = new Tweet(header, body);
+                    newTweetMsg.analyiseTweet();
+                    output = newTweetMsg;
                     break;
 
                 default:
