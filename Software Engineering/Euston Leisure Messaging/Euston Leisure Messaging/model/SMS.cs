@@ -29,6 +29,41 @@ namespace Euston_Leisure_Messaging.model
         #endregion
 
 
+        public void analyiseSMS()
+        {
+            String temp = Body.Split('r')[0];
+
+            Match match = numberPattern.Match(temp);
+
+            if(match.Success)
+            {
+                Sender = temp;
+
+                MessageText = Body.Substring(Body.IndexOf('\n') + 1);
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("SMS sender", "invalid");
+            }
+
+            if (MessageText.Length <= 140)
+            {
+                translateTextSpeak();
+            }
+            else
+            {
+                throw new System.ArgumentOutOfRangeException("SMS body", "Invalid");
+            }
+
+
+
+
+        }
+
+
+
+
+
         #region getters and setters 
 
         #endregion

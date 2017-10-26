@@ -62,7 +62,7 @@ namespace Euston_Leisure_Messaging
 
                 case 'E':
                     Email newMsg = new Email(header, body);
-                    newMsg.analyseEmail()
+                    newMsg.analyiseEmail();
                     output = newMsg;
                     if (SIR.checkIfsir(newMsg))
                     {

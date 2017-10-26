@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Input;
+using Euston_Leisure_Messaging.control;
 
 namespace Euston_Leisure_Messaging
 {

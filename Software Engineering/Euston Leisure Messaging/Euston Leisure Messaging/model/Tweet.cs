@@ -32,6 +32,61 @@ namespace Euston_Leisure_Messaging.model
         #endregion
 
 
+        public void analyiseTweet()
+        {
+            String temp = Body.Split('\r')[0];
+
+            Match match = userPattern.Match(temp);
+
+            if (match.Success)
+            {
+                Sender = temp;
+                MessageText = Body.Substring(Body.IndexOf('\n') + 1);
+            }
+            else
+            {
+                throw new System.ArgumentOutOfRangeException("Tweet", "Invalid Tweet sent");
+            }
+
+            if (MessageText.Length <= 140)
+            {
+                findHashTags();
+                findMentions();
+                translateTextSpeak();
+            }
+            else
+            {
+                throw new System.ArgumentOutOfRangeException("Tweet", "Invalid Tweet body");
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+        public void findHashTags()
+        {
+            foreach (Match match in hashTagPattern.Matches(MessageText)) {
+                Control.addHashTag(match.Value);
+            }
+        }
+
+
+        public void findMentions()
+        {
+            foreach(Match match in userPattern.Matches(MessageText))
+            {
+                Control.addMention(match.Value);
+            }
+
+        }
+
+
         #region toString
         public override string ToString()
         {
