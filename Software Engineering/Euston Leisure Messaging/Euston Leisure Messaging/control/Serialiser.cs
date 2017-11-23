@@ -23,7 +23,7 @@ namespace Euston_Leisure_Messaging.control
         public static void serialiseToFile(Message msg)
         {
             string json = JsonConvert.SerializeObject(msg);
-            StreamWriter file = new StreamWriter("Jsonmessage.txt", true);
+            StreamWriter file = new StreamWriter("messages.txt", true);
             file.WriteLine(json);
 
             file.Close();

@@ -34,6 +34,7 @@ namespace Euston_Leisure_Messaging
             SIR_DICTIONARY = new Dictionary<String, Int32>();
             URL_LIST = new ArrayList();
             MESSAGE_LIST = new ArrayList();
+            Message.populateTextSpeak();
         }
         #endregion
 
@@ -62,7 +63,8 @@ namespace Euston_Leisure_Messaging
 
                 case 'E':
                     Email newMsg = new Email(header, body);
-                    newMsg.analyiseEmail();
+                    control.Serialiser.serialiseToFile(newMsg);
+                    newMsg.analyseMessage();
                     output = newMsg;
                     if (SIR.checkIfSir(newMsg))
                     {
@@ -70,23 +72,28 @@ namespace Euston_Leisure_Messaging
                         SIR sir = new SIR(newMsg);
                         output = sir;
                     }
+                   // MESSAGE_LIST.Add(output);
                     break;
 
                 case 'S':
                     SMS newSMSMsg = new SMS(header, body);
-                    newSMSMsg.analyiseSMS();
+                    newSMSMsg.analyseMessage();
+                    control.Serialiser.serialiseToFile(newSMSMsg);
                     output = newSMSMsg;
+                    //MESSAGE_LIST.Add(output);
                     break;
 
                 case 'T':
                     Tweet newTweetMsg = new Tweet(header, body);
-                    newTweetMsg.analyiseTweet();
+                    control.Serialiser.serialiseToFile(newTweetMsg);
+                    newTweetMsg.analyseMessage();
                     output = newTweetMsg;
+                    //MESSAGE_LIST.Add(output);
                     break;
 
                 default:
                     throw new ArgumentOutOfRangeException("Error in ID");
-                    break;
+                    
             }
 
             MESSAGE_LIST.Add(output);

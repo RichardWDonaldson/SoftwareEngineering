@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Euston_Leisure_Messaging"
         mc:Ignorable="d"
-        Title="MainWindow" Height="416.067" Width="525" Background="#FF94FFFA">
-   
+        Title="MainWindow" Height="515.067" Width="645" Background="#FF94FFFA">
+
     <Grid>
         <Button x:Name="btnNewMessage" Content="TestMessage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="19,89,0,0" Height="30" Click="btnNewMessage_Click" FontFamily="Segoe UI Semibold"/>
         <Button x:Name="btnAnalyze" Content="Analyze Message" HorizontalAlignment="Left" Margin="19,139,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnAnalyze_Click" FontFamily="Segoe UI Semibold"/>
         <Button x:Name="btnShowTrending" Content="Show Trending" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="19,189,0,0" Height="30" Click="btnShowTrending_Click" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="btnQuit" Content="Quit" HorizontalAlignment="Left" Margin="407,345,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnQuit_Click" FontFamily="Segoe UI Semibold"/>
-        <TextBlock x:Name="txtblkMessage" HorizontalAlignment="Left" Margin="139,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="267" Width="355" Text="No Message Provided" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="btnQuit" Content="Quit" HorizontalAlignment="Left" Margin="527,444,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnQuit_Click" FontFamily="Segoe UI Semibold"/>
+        <TextBlock x:Name="txtblkMessage" HorizontalAlignment="Left" Margin="139,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="386" Width="478" Text="No Message Provided" FontWeight="Bold" FontStyle="Italic"/>
         <Button x:Name="btnReadFile" Content="Read from File" HorizontalAlignment="Left" Margin="19,239,0,0" VerticalAlignment="Top" Width="100" Click="btnReadFile_Click" Height="30" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="165,345,0,0" VerticalAlignment="Top" Width="100" Click="btnPrev_Click" IsEnabled="False" Height="30" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="283,345,0,0" VerticalAlignment="Top" Width="100" Click="btnNext_Click" IsEnabled="False" Height="30" FontFamily="Segoe UI Semibold"/>
-        <TextBox x:Name="txtbxPath" HorizontalAlignment="Left" Height="23" Margin="165,308,0,0" TextWrapping="Wrap" Text="messages.txt" VerticalAlignment="Top" Width="218" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="232,444,0,0" VerticalAlignment="Top" Width="100" Click="btnPrev_Click" IsEnabled="False" Height="30" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="350,444,0,0" VerticalAlignment="Top" Width="100" Click="btnNext_Click" IsEnabled="False" Height="30" FontFamily="Segoe UI Semibold"/>
+        <TextBox x:Name="txtbxPath" HorizontalAlignment="Left" Height="23" Margin="232,416,0,0" TextWrapping="Wrap" Text="messages.txt" VerticalAlignment="Top" Width="218" FontFamily="Segoe UI Semibold"/>
 
     </Grid>
 </Window>

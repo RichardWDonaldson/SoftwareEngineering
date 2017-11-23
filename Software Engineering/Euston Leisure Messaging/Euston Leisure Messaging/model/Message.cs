@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Euston_Leisure_Messaging.model
 {
-    public class Message
+    public abstract class Message
     {
 
         private string sender;
@@ -18,7 +18,9 @@ namespace Euston_Leisure_Messaging.model
         private static Dictionary<string, string> TEXTSPEAK;
 
 
-#region constructors
+        #region constructors
+
+        public Message() { }
         public Message(string head, string body)
         {
             this.head = head;
@@ -99,7 +101,11 @@ namespace Euston_Leisure_Messaging.model
 
         #endregion
 
-       
+        //method to display message strings
+        public virtual String toString()
+        {
+            return null;
+        }
 
 
 

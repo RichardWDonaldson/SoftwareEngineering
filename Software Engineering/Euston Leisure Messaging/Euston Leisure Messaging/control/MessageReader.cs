@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,15 +24,15 @@ namespace Euston_Leisure_Messaging.control
         {
             messages = new List<string>();
             int i = 0;
+            string line;
 
+            string temp = "";
             try
             {
                 StreamReader reader = new StreamReader(filePath);
-                {
-                    string line;
 
-                    string temp = "";
 
+                Debug.WriteLine("peak" + reader.Peek());
                     while (reader.Peek() != -1)
                     {
                         line = reader.ReadLine();
@@ -41,9 +42,12 @@ namespace Euston_Leisure_Messaging.control
                         }
                         else
                         {
+                            Debug.WriteLine(temp);
+                            Debug.WriteLine(i);
                             messages.Add(temp);
                             temp = "";
-                            i++;
+                        i++;
+                        Debug.WriteLine(i);
 
                         }
                     }
@@ -51,7 +55,7 @@ namespace Euston_Leisure_Messaging.control
 
 
 
-                }
+                
             }
             catch (Exception e)
             {

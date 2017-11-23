@@ -7,14 +7,10 @@ using System.Threading.Tasks;
 
 namespace Euston_Leisure_Messaging.model
 {
-  public class SMS : Message
+  public class SMS : Message, IMessage
     {
         #region regex
-        private Regex numberPattern = new Regex(@"\+(9[976]\d|8[987530]
-                                                \d|6[987]\d|5[90]\d|42\d|3[875]
-                                                \d|2[98654321]
-                                                \d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)
-                                                \d{1,14}$");
+        private Regex numberPattern = new Regex(@"^(((\+44\s ?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$");
 #endregion
 
     
@@ -29,9 +25,11 @@ namespace Euston_Leisure_Messaging.model
         #endregion
 
 
-        public void analyiseSMS()
+        public void analyseMessage()
         {
-            String temp = Body.Split('r')[0];
+
+            String temp = Body.Split('\r')[0];
+           
 
             Match match = numberPattern.Match(temp);
 
@@ -61,21 +59,15 @@ namespace Euston_Leisure_Messaging.model
         }
 
 
-
-
-
-        #region getters and setters 
-
-        #endregion
-
         #region toString
-        public override string ToString()
+        public override String toString()
         {
-            return base.ToString();
+            String output = "Type:\tSMS\nID:\t" + Head + "\nSender:\t" +
+                Sender + "\nText:\n" + MessageText;
+            return output;
         }
+
         #endregion
-
-
 
     }
 }

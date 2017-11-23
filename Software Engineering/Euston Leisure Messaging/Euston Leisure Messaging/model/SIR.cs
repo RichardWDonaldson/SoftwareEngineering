@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Euston_Leisure_Messaging.model
 {
-    public class SIR : Email
+    public class SIR : Email, IMessage
     {
         private String centreCode;
         private String incident;
@@ -61,7 +61,7 @@ namespace Euston_Leisure_Messaging.model
             return false;
         }
 
-        public new void analyiseSIR()
+        public new void analyseMessage()
         {
             String tempCentre = MessageText.Split('\r')[0];
             Match match = centrePattern.Match(tempCentre);

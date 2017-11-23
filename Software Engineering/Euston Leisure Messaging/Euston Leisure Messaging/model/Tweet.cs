@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Euston_Leisure_Messaging.model
 {
-   public class Tweet : Message
+   public class Tweet : Message, IMessage
     {
 
         #region regex
@@ -32,7 +32,7 @@ namespace Euston_Leisure_Messaging.model
         #endregion
 
 
-        public void analyiseTweet()
+        public void analyseMessage()
         {
             String temp = Body.Split('\r')[0];
 
@@ -88,12 +88,14 @@ namespace Euston_Leisure_Messaging.model
 
 
         #region toString
-        public override string ToString()
+        public override String toString()
         {
-            return base.ToString();
+            String output = "Type:\tTweet\nID:\t" + Head + "\nSender:\t" +
+                Sender + "\nText:\n" + MessageText;
+            return output;
         }
 
-#endregion
+        #endregion
 
     }
 }
