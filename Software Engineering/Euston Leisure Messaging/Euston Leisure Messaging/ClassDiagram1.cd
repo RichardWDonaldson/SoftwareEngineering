@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Euston_Leisure_Messaging.App" Collapsed="true">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="16.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Euston_Leisure_Messaging.Control" Collapsed="true">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="18.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>FAABAgQBAAAAASCCAAAJAQAAGQQAQEEAAAAAQCAAAAA=</HashCode>
       <FileName>control\Control.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Euston_Leisure_Messaging.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11" Y="0.5" Width="1.5" />
+    <Position X="20.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAEAAAAIAAMAAAAABBAIAAAAYAAAICAAAAgAAAE=</HashCode>
       <FileName>view\MainWindow.xaml.cs</FileName>
@@ -23,7 +23,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Euston_Leisure_Messaging.NewMessage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.25" Y="1.5" Width="1.5" />
+    <Position X="18.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAQAAAAQAAgAEAABAEAAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>view\NewMessage.xaml.cs</FileName>
@@ -31,52 +31,52 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Euston_Leisure_Messaging.control.MessageReader" Collapsed="true">
-    <Position X="7.5" Y="1.5" Width="1.5" />
+    <Position X="16.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQEABAAAAAQAAAAA=</HashCode>
       <FileName>control\MessageReader.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Euston_Leisure_Messaging.control.Serialiser" Collapsed="true">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+    <Position X="16.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>control\Serialiser.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Euston_Leisure_Messaging.model.Email" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+  <Class Name="Euston_Leisure_Messaging.model.Email">
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAkAAAAAAAAIAABACAAAQAAAAABAAAAAAAAEI=</HashCode>
       <FileName>model\Email.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Euston_Leisure_Messaging.model.Message" Collapsed="true">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="Euston_Leisure_Messaging.model.Message">
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>SAgAAAAAgAAAAIAAAAABBAAAAQAAAAAAAAgAQAAIAAA=</HashCode>
       <FileName>model\Message.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Euston_Leisure_Messaging.model.SIR" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+  <Class Name="Euston_Leisure_Messaging.model.SIR">
+    <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAACEAAgAAAQAQBAEAAAAAAAQQAAIAAAAAAAAAAAAg=</HashCode>
       <FileName>model\SIR.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Euston_Leisure_Messaging.model.SMS" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Class Name="Euston_Leisure_Messaging.model.SMS">
+    <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAABAAA=</HashCode>
       <FileName>model\SMS.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Euston_Leisure_Messaging.model.Tweet" Collapsed="true">
-    <Position X="5" Y="1.75" Width="1.5" />
+  <Class Name="Euston_Leisure_Messaging.model.Tweet">
+    <Position X="10.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAABBAAAAAQAAAAEAAAAAAAAEAA=</HashCode>
       <FileName>model\Tweet.cs</FileName>
@@ -84,27 +84,27 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Euston_Leisure_Messaging.Properties.Resources" Collapsed="true">
-    <Position X="11" Y="1.5" Width="1.5" />
+    <Position X="20.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="Euston_Leisure_Messaging.Properties.Settings" Collapsed="true">
-    <Position X="9.25" Y="2.5" Width="1.5" />
+    <Position X="18.5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="Euston_Leisure_Messaging.view.Trending" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11" Y="2.5" Width="1.5" />
+    <Position X="20.25" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>view\Trending.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="Euston_Leisure_Messaging.model.IMessage" Collapsed="true">
-    <Position X="7.5" Y="3.75" Width="1.5" />
+  <Interface Name="Euston_Leisure_Messaging.model.IMessage">
+    <Position X="8" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>model\IMessage.cs</FileName>
