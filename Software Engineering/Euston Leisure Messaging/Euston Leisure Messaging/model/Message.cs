@@ -35,7 +35,7 @@ namespace Euston_Leisure_Messaging.model
         public static void populateTextSpeak()
         {
             TEXTSPEAK = new Dictionary<string, string>();
-
+            
             StreamReader reader = new StreamReader("textwords.csv");
             {
                 string line;
